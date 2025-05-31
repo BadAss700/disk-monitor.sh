@@ -19,14 +19,23 @@ Step 4 → Install mailx package
 
 Step 5 → Configure SMTP for sending mail
 Edit the file:
+<br>
 -nano /etc/mail.rc
+<br>
 Add the following lines at the bottom:
+<br>
 -set smtp-use-starttls
+<br>
 -set ssl-verify=ignore
+<br>
 -set smtp=smtp://smtp.gmail.com:587
+<br>
 -set smtp-auth=login
+<br>
 -set smtp-auth-user=your_email@gmail.com
+<br>
 -set smtp-auth-password=your_email_app_password
+<br>
 -set from="your_email@gmail.com"
 
 Step 6 → Generate a Gmail App Password
